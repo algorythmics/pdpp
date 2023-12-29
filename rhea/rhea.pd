@@ -1,11 +1,8 @@
-#N canvas 297 215 568 275 10;
+#N canvas 761 222 568 275 10;
 #X obj 33 37 r /piano/\$1/note;
 #X obj 34 186 pdpp/rhea/stack \$1;
 #X obj 34 236 pdpp/rhea/udp \$1;
-#X obj 152 235 pdpp/rhea/udp \$2;
-#X text 42 8 rhea <nr=pianonr> [second piano player nr \, splitted]
-;
-#X obj 152 214 spigot \$2;
+#X text 42 8 rhea <nr=pianonr> [second piano player nr \, splitted];
 #X obj 33 88 spigot 1;
 #N canvas 499 250 780 478 piano 0;
 #X obj 42 270 demux 0 1 2;
@@ -16,8 +13,7 @@
 #X obj 135 197 + 1;
 #X obj 93 127 t b b;
 #X msg 137 153 21;
-#X obj 91 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 91 105 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 89 251 outlet;
 #X obj 116 57 inlet;
 #X text 82 30 all note 1s \, pedal on;
@@ -42,8 +38,7 @@
 #X obj 63 200 pack 0 0;
 #X obj 61 88 t b b;
 #X msg 105 114 21;
-#X obj 59 66 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 59 66 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 90 63 inlet;
 #X obj 63 222 outlet;
 #X text 50 35 all notes off;
@@ -77,8 +72,7 @@
 #X obj 40 116 inlet;
 #X obj 42 440 outlet;
 #X text 83 114 notes <note> <vel>;
-#X text 44 18 modes are: pedal on which triggers overwrite and overwrite
-only;
+#X text 44 18 modes are: pedal on which triggers overwrite and overwrite only;
 #X text 122 333 pedal ist overwrite without note offs;
 #X text 345 389 sent all 1s to alle notes;
 #X text 450 359 all note offs wenn pedal off;
@@ -121,8 +115,8 @@ only;
 #X obj 78 64 r /piano/\$1/on;
 #X obj 227 68 spigot 0;
 #X obj 227 89 print piano_in;
-#X obj 275 215 spigot 0;
-#X obj 275 236 print piano_out;
+#X obj 193 204 spigot 0;
+#X obj 193 225 print piano_out;
 #X obj 320 35 r /piano/\$1/v_in;
 #X obj 240 112 pdpp/veltab/store /piano/\$1/veltab;
 #X obj 34 112 pdpp/veltab/map /piano/\$1/veltab;
@@ -130,19 +124,17 @@ only;
 #X obj 429 90 pdpp/rhea/init \$1;
 #X obj 432 40 r /piano/\$1/rheanr;
 #X obj 432 63 list prepend \$1;
-#X connect 0 0 9 0;
-#X connect 0 0 6 0;
+#X connect 0 0 7 0;
+#X connect 0 0 4 0;
 #X connect 1 0 2 0;
-#X connect 1 1 5 0;
-#X connect 5 0 3 0;
-#X connect 6 0 15 0;
-#X connect 7 0 1 0;
-#X connect 8 0 6 1;
+#X connect 4 0 13 0;
+#X connect 5 0 1 0;
+#X connect 6 0 4 1;
+#X connect 7 0 8 0;
 #X connect 9 0 10 0;
-#X connect 11 0 12 0;
-#X connect 13 0 9 1;
-#X connect 13 0 11 1;
-#X connect 15 0 11 0;
-#X connect 15 0 7 0;
-#X connect 18 0 19 0;
-#X connect 19 0 17 0;
+#X connect 11 0 7 1;
+#X connect 11 0 9 1;
+#X connect 13 0 9 0;
+#X connect 13 0 5 0;
+#X connect 16 0 17 0;
+#X connect 17 0 15 0;
