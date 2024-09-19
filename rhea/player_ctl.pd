@@ -1,0 +1,15 @@
+#N canvas 97 78 655 509 12;
+#X obj 30 285 pdpp/noteeq/ctl 1;
+#X obj 27 363 pdpp/test/arp 1;
+#X obj 27 424 pdpp/test/note 1;
+#X text 70 343 --- TESTS ---;
+#X obj 30 76 pdpp/rhea/ctl 1;
+#X obj 116 48 nbx 2 14 0 1e+37 0 0 /rhea/nr /rhea/nr /rhea/nr 0 -8 0 10 #fcfcfc #000000 #000000 0 256;
+#X obj 154 48 bng 15 250 50 0 reinit reinit reinit_from_config.txt 17 7 0 10 #fcfcfc #000000 #000000;
+#X text 28 47 1);
+#X obj 57 49 tgl 15 0 setup-vis setup-vis setup 17 7 0 10 #f8fc00 #000000 #000000 0 1;
+#X obj 230 274 pdpp/iface/midiin_ctl 1;
+#X obj 230 76 pdpp/iface/osc_ctl 1;
+#X obj 430 76 iface/mifi_ctl 1;
+#X obj 445 300 bng 45 250 50 0 allnotesoff allnotesoff AllNotesOff -5 -7 0 10 #fc0400 #000000 #000000;
+#X text 278 7 RheaPlayer with basics controls and interfaces;
