@@ -1,4 +1,4 @@
-#N canvas 721 225 567 503 10;
+#N canvas 2951 472 567 503 10;
 #X text 25 29 pdpp/veltab/store <veltab_id>;
 #X obj 225 27 table \$1;
 #N canvas 324 130 400 153 backward_compatibility 0;
@@ -14,13 +14,13 @@
 #X connect 0 2 4 0;
 #X connect 0 3 5 0;
 #X connect 1 0 0 0;
-#X restore 27 118 pd backward_compatibility;
+#X restore 27 101 pd backward_compatibility;
 #X obj 247 404 for++ 0 127 1;
 #X obj 247 432 t f f;
 #X obj 247 455 * 1;
 #X msg 247 358 1;
 #X obj 247 381 t b f;
-#X floatatom 318 364 5 0 0 0 - - -, f 5;
+#X floatatom 318 364 5 0 0 0 - - - 0;
 #X obj 247 334 route bang float;
 #X msg 36 293 read \$1;
 #X msg 253 258 write \$1;
@@ -36,9 +36,7 @@
 #X obj 14 13 loadbang;
 #X msg 87 116 resize 128 \, bounds 0 127 127 0;
 #X text 125 22 INIT tab and and label;
-#X msg 47 140 xticks 60 1 12 \, xlabel -5 10 20 30 40 50 60 70 80 90
-100 110 120 127 \, yticks 60 1 12 \, ylabel -3 10 20 30 40 50 60 70
-80 90 100 110 120 127;
+#X msg 47 140 xticks 60 1 12 \, xlabel -5 10 20 30 40 50 60 70 80 90 100 110 120 127 \, yticks 60 1 12 \, ylabel -3 10 20 30 40 50 60 70 80 90 100 110 120 127;
 #X obj 15 35 t b b;
 #X obj 48 63 t b b;
 #X obj 16 206 s \$1/linear;
@@ -51,9 +49,7 @@
 #X connect 5 0 3 0;
 #X connect 5 1 1 0;
 #X restore 286 27 pd init;
-#X text 25 54 Veltab is a mapping of input velocity to out velocity
-over a table. It can be used anywhere \, but only one uniq store id
-for one or many map \, see: pdpp/veltab/map <veltab_id>;
+#X text 25 54 Veltab is a mapping of input velocity to out velocity over a table. It can be used anywhere \, but only one uniq store id for one or many map \, see: pdpp/veltab/map <veltab_id>;
 #X obj 36 256 symbol veltab.txt;
 #X obj 253 228 symbol veltab.txt;
 #X obj 36 228 route bang symbol filename;
@@ -66,9 +62,9 @@ for one or many map \, see: pdpp/veltab/map <veltab_id>;
 #X obj 247 479 tabwrite \$1;
 #X obj 37 457 s \$1;
 #X obj 433 188 s pd-\$1;
-#X obj 111 142 r \$1/load;
-#X obj 111 163 route bang symbol;
-#X msg 110 182 symbol data/;
+#X obj 102 125 r \$1/load;
+#X obj 103 147 route bang symbol;
+#X msg 104 175 symbol data/;
 #X obj 333 129 route bang symbol;
 #X msg 332 148 symbol data/;
 #X obj 357 297 spigot 1;
