@@ -1,4 +1,4 @@
-#N canvas 2739 709 772 339 10;
+#N canvas 915 358 445 97 10;
 #X obj 11 11 cnv 15 198 48 empty empty \$1 3 10 0 14 #dcdcdc #404040 0;
 #X obj 15 34 tgl 15 0 \$1/vis \$1/vis edit 17 7 0 10 #f8fc00 #000000 #000000 0 1;
 #X obj 178 28 bng 10 250 50 0 \$1/load \$1/load load 12 7 0 8 #00fc04 #000000 #000000;
@@ -6,8 +6,8 @@
 #X obj 178 43 bng 10 250 50 0 \$1/save \$1/save save 12 7 0 8 #fc0400 #000000 #000000;
 #X obj 232 48 tgl 15 0 \$1/v_ctl \$1/v_ctl V 5 7 0 10 #f8fc00 #000000 #000000 0 1;
 #X text 254 48 not implemented until now;
-#X obj 118 27 bng 15 250 50 0 \$1/read \$1/read read 17 7 0 10 #00fc04 #000000 #000000;
-#X obj 118 43 bng 15 250 50 0 \$1/write \$1/write write 17 7 0 10 #fc0400 #000000 #000000;
+#X obj 118 27 bng 15 250 50 0 \$1/read empty read 17 7 0 10 #00fc04 #000000 #000000;
+#X obj 118 43 bng 15 250 50 0 \$1/write empty write 17 7 0 10 #fc0400 #000000 #000000;
 #X text 239 5 pdpp/veltab/ctl <id>;
 #X text 179 9 pdpp;
 #X coords 0 -1 1 1 200 50 2 10 10;
