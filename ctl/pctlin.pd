@@ -1,0 +1,9 @@
+#N canvas 795 448 663 332 12;
+#X obj 29 88 ctlin 52 1;
+#X obj 29 113 spigot 0;
+#X obj 29 138 outlet;
+#X obj 119 89 r /piano/\$1/controller/on;
+#X text 63 15 iface/controller/ctlin <piano id> <ctl nr><channel>[default on], f 72;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 1 1;

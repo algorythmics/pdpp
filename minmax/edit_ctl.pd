@@ -1,6 +1,6 @@
 #N canvas 430 314 502 190 10;
 #X obj 188 52 r /piano/\$1/minmaxs/edit/gui;
-#N canvas 1013 195 550 359 \$0-gui 1;
+#N canvas 1015 265 550 359 \$0-gui 1;
 #X obj 20 14 cnv 15 500 300 empty empty edit_min_max_\$1 20 12 0 14 #e0e0e0 #404040 0;
 #X obj 25 264 bng 15 250 50 0 /piano/\$1/minmaxs/save /piano/\$1/minmaxs/save save-defaults 0 -6 0 8 #fc0400 #000000 #000000;
 #X obj 28 155 tgl 15 0 /piano/\$1/vis_notemins /piano/\$1/vis_notemins v_notemins\$1 17 7 0 10 #f8fc00 #000000 #000000 0 1;

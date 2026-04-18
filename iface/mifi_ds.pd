@@ -1,0 +1,10 @@
+#N canvas 27 580 492 321 10;
+#X text 24 214 (c) GPL \, acre winfried ritsch;
+#X text 32 24 Parameter for multichannel player;
+#X text 35 2 pdpp/iface/mifi_ds <domain> <id>;
+#X obj 34 40 ds/register_map \$1 /mifi/\$2/tempo;
+#X obj 34 62 ds/register_map \$1 /mifi/\$2/tranpose;
+#X obj 34 84 ds/register_map \$1 /mifi/\$2/filename;
+#X obj 33 106 ds/register_map \$1 /mifi/\$2/locate;
+#X obj 33 129 ds/register_map \$1 /mifi/\$2/loop;
+#X obj 29 170 ds/register_map \$1 /mifi/\$2/veltab/filename;
